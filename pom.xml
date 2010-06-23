@@ -23,11 +23,10 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-javadoc-plugin</artifactId>
 				<configuration>
-					<links>
-						<link>../../Matrix</link>
-						<link>../GeometryData</link>
-						<link>${java-api-url}</link>
-					</links>
+					<offlineLinks>
+						<offlineLink><url>../Matrix</url><location>${vision-javadoc-path}/Matrix</location></offlineLink>
+						<offlineLink><url>../GeometryData</url><location>${vision-javadoc-path}/GeometryData</location></offlineLink>
+					</offlineLinks>
 				</configuration>
 			</plugin>
 		</plugins>
