@@ -15,8 +15,8 @@ import java.util.Locale;
 import java.util.Scanner;
 import kcsaba.math.matrix.MatrixFactory;
 import kcsaba.math.matrix.Vector3;
-import kcsaba.vision.data.mesh.IndexTriangleMeshImpl;
 import kcsaba.vision.data.mesh.IndexedTriangleMesh;
+import kcsaba.vision.data.mesh.IndexedTriangleMeshImpl;
 
 /**
  * Class for reading meshes from files in PLY format.
@@ -355,7 +355,7 @@ public class PlyReader {
 		} finally {
 			try {fis.close();} catch (IOException e) {}
 		}
-		return new IndexTriangleMeshImpl(vertices, triangles);
+		return new IndexedTriangleMeshImpl(vertices, triangles);
 	}
 	private static Type parse(String type) throws InvalidPlyFormatException {
 		if (type.equals("char")) return Type.CHAR;

@@ -12,7 +12,7 @@
 
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>kcsaba.vision</groupId>
-	<version>1.0.0</version>
+	<version>1.0.1</version>
 	<artifactId>PlyFormat</artifactId>
 	<packaging>jar</packaging>
 	<name>PlyFormat</name>
@@ -36,12 +36,12 @@
 		<dependency>
 			<groupId>kcsaba</groupId>
 			<artifactId>Matrix</artifactId>
-			<version>1.1.0</version>
+			<version>2.0.0</version>
 		</dependency>
 		<dependency>
 			<groupId>kcsaba.vision</groupId>
 			<artifactId>GeometryData</artifactId>
-			<version>1.0.0</version>
+			<version>1.1.1</version>
 		</dependency>
 	</dependencies>
 
