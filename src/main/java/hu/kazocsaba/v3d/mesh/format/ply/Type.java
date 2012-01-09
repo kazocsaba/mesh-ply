@@ -10,7 +10,7 @@ import java.util.Scanner;
  *
  * @author Kazó Csaba
  */
-public enum Type {
+enum Type {
 	CHAR {
 		@Override
 		public Number parse(Scanner scanner) throws IOException {
