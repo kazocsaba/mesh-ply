@@ -1,4 +1,4 @@
-package kcsaba.vision.data.format.ply;
+package hu.kazocsaba.v3d.mesh.format.ply;
 
 import java.io.BufferedInputStream;
 import java.io.File;
@@ -13,10 +13,10 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Locale;
 import java.util.Scanner;
-import kcsaba.math.matrix.MatrixFactory;
-import kcsaba.math.matrix.Vector3;
-import kcsaba.vision.data.mesh.IndexedTriangleMesh;
-import kcsaba.vision.data.mesh.IndexedTriangleMeshImpl;
+import hu.kazocsaba.math.matrix.MatrixFactory;
+import hu.kazocsaba.math.matrix.Vector3;
+import hu.kazocsaba.v3d.mesh.IndexedTriangleMesh;
+import hu.kazocsaba.v3d.mesh.IndexedTriangleMeshImpl;
 
 /**
  * Class for reading meshes from files in PLY format.

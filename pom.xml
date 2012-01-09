@@ -1,32 +1,72 @@
+
 <project xmlns="http://maven.apache.org/POM/4.0.0"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
 	                    http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	
 	<parent>
-		<groupId>kcsaba</groupId>
-		<artifactId>vision-libs</artifactId>
-		<version>1.0.0</version>
-		<relativePath>../../library</relativePath>
+		<groupId>org.sonatype.oss</groupId>
+		<artifactId>oss-parent</artifactId>
+		<version>7</version>
 	</parent>
 
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>kcsaba.vision</groupId>
-	<version>1.0.1</version>
-	<artifactId>PlyFormat</artifactId>
+	<groupId>hu.kazocsaba.geom3d</groupId>
+	<version>1.0.0-SNAPSHOT</version>
+	<artifactId>mesh-ply</artifactId>
 	<packaging>jar</packaging>
-	<name>PlyFormat</name>
+	<name>PLY Format Support</name>
+	<description>Data classes for 3D meshes.</description>
+	<url>https://github.com/kazocsaba/mesh-ply</url>
 
+	<developers>
+		<developer>
+			<id>kazocsaba</id>
+			<name>Kazó Csaba</name>
+			<email>kazocsaba@gmail.com</email>
+		</developer>
+	</developers>
+
+	<licenses>
+		<license>
+			<name>The MIT License</name>
+			<url>http://www.opensource.org/licenses/mit-license.php</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+	<scm>
+		<connection>scm:git:git@github.com:kazocsaba/mesh-ply.git</connection>
+		<developerConnection>scm:git:git@github.com:kazocsaba/mesh-ply.git</developerConnection>
+		<url>https://github.com/kazocsaba/mesh-ply</url>
+	</scm>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+	
 	<build>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-javadoc-plugin</artifactId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.3.2</version>
 				<configuration>
-					<offlineLinks>
-						<offlineLink><url>../Matrix</url><location>${vision-javadoc-path}/Matrix</location></offlineLink>
-						<offlineLink><url>../GeometryData</url><location>${vision-javadoc-path}/GeometryData</location></offlineLink>
-					</offlineLinks>
+					<showWarnings>true</showWarnings>
+					<showDeprecation>true</showDeprecation>
+					<source>1.6</source>
+					<target>1.6</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<version>2.8</version>
+				<configuration>
+					<links>
+						<link>http://kazocsaba.github.com/matrix/apidocs</link>
+						<link>http://kazocsaba.github.com/mesh/apidocs</link>
+					</links>
 				</configuration>
 			</plugin>
 		</plugins>
@@ -34,14 +74,14 @@
 
 	<dependencies>
 		<dependency>
-			<groupId>kcsaba</groupId>
-			<artifactId>Matrix</artifactId>
-			<version>2.0.0</version>
+			<groupId>hu.kazocsaba.math</groupId>
+			<artifactId>matrix</artifactId>
+			<version>1.1.0</version>
 		</dependency>
 		<dependency>
-			<groupId>kcsaba.vision</groupId>
-			<artifactId>GeometryData</artifactId>
-			<version>1.1.1</version>
+			<groupId>hu.kazocsaba.geom3d</groupId>
+			<artifactId>mesh</artifactId>
+			<version>1.0.0</version>
 		</dependency>
 	</dependencies>
 

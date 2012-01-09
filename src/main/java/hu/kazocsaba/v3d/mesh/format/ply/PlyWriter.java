@@ -1,19 +1,19 @@
-package kcsaba.vision.data.format.ply;
+package hu.kazocsaba.v3d.mesh.format.ply;
 
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.OutputStreamWriter;
 import java.io.BufferedOutputStream;
 import java.io.BufferedReader;
 import java.io.DataOutputStream;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.io.OutputStream;
+import java.io.OutputStreamWriter;
 import java.io.StringReader;
 import java.io.Writer;
-import kcsaba.math.matrix.Vector3;
-import kcsaba.vision.data.mesh.IndexedTriangleMesh;
-import kcsaba.vision.data.mesh.Meshes;
-import kcsaba.vision.data.mesh.TriangleMesh;
+import hu.kazocsaba.math.matrix.Vector3;
+import hu.kazocsaba.v3d.mesh.IndexedTriangleMesh;
+import hu.kazocsaba.v3d.mesh.Meshes;
+import hu.kazocsaba.v3d.mesh.TriangleMesh;
 
 /**
  * A writer for saving meshes in PLY format.
