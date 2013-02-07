@@ -9,7 +9,7 @@
 
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>hu.kazocsaba.geom3d</groupId>
-	<version>1.1.0</version>
+	<version>1.1.1-SNAPSHOT</version>
 	<artifactId>mesh-ply</artifactId>
 	<packaging>jar</packaging>
 	<name>PLY Format Support</name>
