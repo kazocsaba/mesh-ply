@@ -10,7 +10,7 @@ import java.util.List;
 class Element {
 	public String name;
 	public int count;
-	public List<Property> properties=new ArrayList<Property>();
+	public List<Property> properties=new ArrayList<>();
 
 	public Element(String name, int count) {
 		this.name = name;
